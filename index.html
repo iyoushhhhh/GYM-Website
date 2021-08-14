@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Fitness Center </title>
+    
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    /* Css reset */
+    body{
+        /* font-family: 'Crimson Text', serif; */
+        font-family: 'Crimson Text', serif;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/sport-2245029_1920.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid red; */
+        left: 11px;
+        top: -10px;
+        margin: 29px;
+
+    }
+    .left img{
+        width: 130px;
+        filter: invert(100%);
+        /* size: 19%; */
+    }
+    .left div{
+        text-align: center;
+        line-height: 0px;
+        font-size: 15px;
+    }
+    .mid{
+        /* To center a element */
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+         /* border: 2px solid yellow; */
+
+
+    }
+    .right{
+        position: absolute;
+        right: 11px;
+        top: 10px;
+        display: inline-block;
+        /* border: 2px solid white; */
+        margin: 29px;
+ }
+ .navbar{
+     display: inline-block;
+ }
+ .navbar li{
+    color: azure;
+    display: inline-block;
+    font-size: 25px;
+
+ }
+ .navbar li a{
+    color: azure;
+    text-decoration: none;
+    padding: 34px 21px;
+ }
+ .navbar li a:hover, .navbar li a.active{
+     text-decoration: underline;
+     color: grey;
+ }
+ .btn{
+     font-family: 'Crimson Text', serif;
+     cursor: pointer;
+     background-color: transparent;
+     border: 1px solid grey;
+     border-radius: 9px;
+     color: whitesmoke;
+     font-size: 15px;
+     font-weight: bold;
+     padding: 9px 16px;
+     align-items: center;
+ }
+ .form input{
+     border: 2px solid green;
+     text-align: center;
+     display: block;
+     width: 40%;
+     padding: 2px;
+     border-radius: 6px;
+     margin: 3px auto;
+ }
+ .btn:hover{
+     
+     background-color: rgb(32, 32, 32);
+ }
+ .btn img{
+     text-align: center;
+     text-shadow: 3px;
+     width: 12px;
+     size: 2px;
+ }
+ .container{
+     /* border: 2px solid whitesmoke; */
+     margin: 97px 37px;
+     padding: 54px 47px;
+     width: 33%;
+     border-radius: 36px;
+ }
+ .container h1{
+     
+     text-align: center;
+ }
+ #submit{
+     text-align: center;
+ }
+</style>
+<body>
+    <header class="header">
+        <!-- For Logo -->
+        <div class="left">
+          <img src="image/0fe005679f54e54358f480c0ffe7aa34.jpg" alt="">
+          <div>Ayush Fitness Center</div>
+
+        </div>
+        <!-- For navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+
+        </div>
+        <!-- For buttons -->
+        <div class="right">
+            <button class="btn">
+                Register Now
+
+            </button>
+            <button class="btn">
+                <img src="image/112-gmail_email_mail-512.png" alt="">
+                Email
+
+            </button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now and Get 60% OFF !</h1>
+        <form action="backend.php">
+            <div class="form">
+                <input type="text" name="enterName" id="" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="text" name="enterAdd" id="" placeholder="Enter your adderess">
+            </div>
+            <button class="btn" id="submit">
+                <img src="image/download.jfif" alt="">
+                Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
